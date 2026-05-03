@@ -21,6 +21,7 @@ app.get("/webhook", (req, res) => {
 
 // 🔹 Receive messages (POST)
 app.post("/webhook", (req, res) => {
+  console.log("update Received");
   console.log("Webhook event:", JSON.stringify(req.body, null, 2));
 
   // Always respond 200
